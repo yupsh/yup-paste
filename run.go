@@ -56,8 +56,16 @@ func newApp(version string, stdin io.Reader, stdout io.Writer, fs afero.Fs) *cli
 		// os.Exit, so the exit code stays testable.
 		ExitErrHandler: func(context.Context, *cli.Command, error) {},
 		Flags: []cli.Flag{
-			&cli.StringFlag{Name: flagDelimiters, Aliases: []string{"d"}, Usage: "use characters from LIST instead of TABs"},
-			&cli.BoolFlag{Name: flagSerial, Aliases: []string{"s"}, Usage: "paste one file at a time instead of in parallel"},
+			&cli.StringFlag{
+				Name:    flagDelimiters,
+				Aliases: []string{"d"},
+				Usage:   "use characters from LIST instead of TABs",
+			},
+			&cli.BoolFlag{
+				Name:    flagSerial,
+				Aliases: []string{"s"},
+				Usage:   "paste one file at a time instead of in parallel",
+			},
 		},
 		Action: action(stdin, stdout, fs),
 	}
