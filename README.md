@@ -1,22 +1,9 @@
-# yup-paste
+[![actions](https://github.com/yupsh/yup-paste/actions/workflows/actions.yml/badge.svg)](https://github.com/yupsh/yup-paste/actions/workflows/actions.yml)
+[![ci](https://github.com/yupsh/yup-paste/actions/workflows/ci.yml/badge.svg)](https://github.com/yupsh/yup-paste/actions/workflows/ci.yml)
+[![dockerfiles](https://github.com/yupsh/yup-paste/actions/workflows/dockerfiles.yml/badge.svg)](https://github.com/yupsh/yup-paste/actions/workflows/dockerfiles.yml)
+[![docs](https://github.com/yupsh/yup-paste/actions/workflows/docs.yml/badge.svg)](https://github.com/yupsh/yup-paste/actions/workflows/docs.yml)
+[![go](https://github.com/yupsh/yup-paste/actions/workflows/go.yml/badge.svg)](https://github.com/yupsh/yup-paste/actions/workflows/go.yml)
+[![release](https://github.com/yupsh/yup-paste/actions/workflows/release.yml/badge.svg)](https://github.com/yupsh/yup-paste/actions/workflows/release.yml)
+[![shell](https://github.com/yupsh/yup-paste/actions/workflows/shell.yml/badge.svg)](https://github.com/yupsh/yup-paste/actions/workflows/shell.yml)
 
-```
-NAME:
-   paste - merge lines of files
-
-USAGE:
-   paste [OPTIONS] [FILE...]
-
-   Write lines consisting of the sequentially corresponding lines from
-   each FILE, separated by TABs, to standard output.
-   With no FILE, or when FILE is -, read standard input.
-
-VERSION:
-   dev
-
-GLOBAL OPTIONS:
-   --delimiters string, -d string  use characters from LIST instead of TABs
-   --serial, -s                    paste one file at a time instead of in parallel
-   --help, -h                      show help
-   --version                       print version information and exit
-```
+[docs](https://yupsh.github.io/docs.repl/)
