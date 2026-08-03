@@ -45,11 +45,14 @@ func flags() []urf.Flag {
 			Name:    flagDelimiters,
 			Aliases: []string{"d"},
 			Usage:   "use characters from LIST instead of TABs",
+			Value:   "",
+			Sources: urf.EnvVars("YUP_PASTE_DELIMITERS"),
 		},
 		&urf.BoolFlag{
 			Name:    flagSerial,
 			Aliases: []string{"s"},
 			Usage:   "paste one file at a time instead of in parallel",
+			Sources: urf.EnvVars("YUP_PASTE_SERIAL"),
 		},
 	}
 }
